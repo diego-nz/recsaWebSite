@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+a{
+    text-decoration: none;
+}
 body{
     background: darkblue;
     width: 100%;
@@ -41,7 +44,6 @@ header{
 }
 .thirdColumn a{
     background: green;
-    text-decoration: none;
 }
 .thirdColumn a:hover{
     background: black;
@@ -60,7 +62,6 @@ header{
     border-radius: 10%;
 }
 .menu ul li a{
-    text-decoration: none;
     padding: .8%;
     border-radius: 10%;
 }

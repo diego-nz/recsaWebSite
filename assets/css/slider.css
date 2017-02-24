@@ -55,6 +55,9 @@ span {
   font-weight: normal;
   border-radius: 4px;
 }
+span p,h4{
+    margin-top: 3%;
+}
 
 @-webkit-keyframes slide-animation {
   1% {left: 0%; opacity: 1;}
