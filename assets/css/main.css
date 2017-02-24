@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: darkblue;
+    width: 100%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    display: inline-block;
+    width: 100%;
+}
+
+.topElements{
+    background: white;
+}
+.firstColumn {
+   vertical-align: middle;
+    width: 20%;
+    display: inline-block;
+}
+.secondColumn{
+    width: 60%;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: right;
+}
+.thirdColumn{
+    width: 19%;
+    display: inline-block;
+}
+.thirdColumn ul li{
+    margin-left: 3%;
+    list-style: none;
+    display: inline;
+    text-align: right;
+}
+.thirdColumn a{
+    background: green;
+    text-decoration: none;
+}
+.thirdColumn a:hover{
+    background: black;
+}
+.menu{
+    background: purple;
+    padding: 1%;
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 7%;
+    background: yellow;
+    padding: .8%;
+    border-radius: 10%;
+}
+.menu ul li a{
+    text-decoration: none;
+    padding: .8%;
+    border-radius: 10%;
+}
+.menu ul li a:hover{
+    background: orange;
+}
+.centerAllContent{
+    margin-left: auto;
+    margin-right: auto;
+    background: lightblue;
+    width: 60%;
+}
+.title{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.services{
+    text-align: center;
+}
+.dangerousResidues{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+.specialResidues{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+.urbanResidues{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+}
+.services img{
+    border-radius: 50%;
+}
