@@ -1,86 +1,46 @@
-.slider {
-  box-shadow: 0px 4px 10px #9d9d9d;
-  padding: 0;
-  margin: 0;
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  max-width: 1024px;
-  border-radius: 4px;
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
-
-.slider ul {
-  width: 1000%;
-  height: auto;
-  position: relative;
-  list-style: none;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  -moz-animation:slide-animation 10s infinite;
-  -webkit-animation:slide-animation 10s infinite;
+figure {
+    margin: 0;
+    background: #101010;
+    font-family: Istok Web, sans-serif;
+    font-weight: 100;
 }
-/*
-.slider ul:hover {
-  -moz-animation-play-state:paused;
-  -webkit-animation-play-state:paused;
-}*/
-
-.slider li {
-  width: 10%;
-  list-style: none;
-  float: left;
-  margin: 0;
-  padding: 0;
+div#captioned-gallery {
+    width: 100%;
+    overflow: hidden;
 }
-
-img {
-  max-width: 100%;
-  border-radius: 4px;
+figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slidy infinite;
 }
-
-span {
-  position: relative;
-  height: 50px;
-  display: block;
-  font-size: 0.8em;
-  bottom: 0;
-  padding: 0.5px 20px 0px 20px;
-  margin-top: -50px;
-  overflow: hidden;
-  background-color:rgba(54,44,48,0.6);
-  color: #fcfcfc;
-  text-shadow: 0px 1px 1px #9d9d9d;
-  font-weight: normal;
-  border-radius: 4px;
+figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
 }
-span p,h4{
-    margin-top: 3%;
+figure.slider img {
+    width: 100%;
+    height: auto;
 }
-
-@-webkit-keyframes slide-animation {
-  1% {left: 0%; opacity: 1;}
-  18% {left: 0%; opacity: 1}
-  19% {opacity: 0.2;}
-  20% {left: -100%; opacity: 1;}
-  58% {left: -100%; opacity: 1;}
-  59% {opacity: 0.2;}
-  60% {left: -200%; opacity: 1;}
-  98% {left: -200%; opacity: 1;}
-  99% {opacity: 0.5;}
-  100% {left: 0%;}
-}
-
-@-moz-keyframes slide-animation {
-  1% {left: 0%; opacity: 1;}
-  18% {left: 0%; opacity: 1}
-  19% {opacity: 0.2;}
-  20% {left: -100%; opacity: 1;}
-  58% {left: -100%; opacity: 1;}
-  59% {opacity: 0.2;}
-  60% {left: -200%; opacity: 1;}
-  98% {left: -200%; opacity: 1;}
-  99% {opacity: 0.5;}
-  100% {left: 0%;}
+figure.slider figure figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    width: 100%;
+    font-size: 2rem;
+    padding: .6rem;
 }

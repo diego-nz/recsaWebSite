@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/carousel.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <title>Recsa</title>
 </head>
 <body>
+  <!-----<div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+  <input class="form-control" type="password" placeholder="Password">
+</div>
+  <i class="fa fa-key fa-5x"></i>----->
    <header>
    <div class="topElements">
         <div class="firstColumn">
@@ -39,81 +44,86 @@
    </header>
     <div class="centerAllContent">
       <!-----Slider----->
-       <div class="slider">
-        <ul>
-            <li>
-                <img src="assets/images/1.jpg" />
-                <span>
-                            <h4>Titulo</h4>
-                            <p>Descripción</p>
-                        </span>
-            </li>
-            <li>
-                <img src="assets/images/2.jpg" />
-                <span>
-                            <h4>Título</h4>
-                            <p>Descripción</p>
-                        </span>
-            </li>
-            <li>
-                <img src="assets/images/3.jpg" />
-                <span>
-                            <h4>Título</h4>
-                            <p>Descripción</p>
-                        </span>
-            </li>
-            <li>
-                <img src="assets/images/4.jpg" />
-                <span>
-                            <h4>Lorem</h4>
-                            <p>More lorem ipsum dolor...</p>
-                        </span>
-            </li>
-            <li>
-                <img src="assets/images/5.jpg" />
-                <span>
-                            <h4>Lorem</h4>
-                            <p>More lorem ipsum dolor...</p>
-                        </span>
-            </li>
-        </ul>
-    </div>
+       <div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="assets/images/1.jpg" alt>
+			<figcaption>Descripción1</figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/2.jpg" alt>
+			<figcaption>Descripcion2</figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/3.jpg" alt>
+			<figcaption>Descripcion3</figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/4.jpg" alt>
+			<figcaption>Descripcion4</figcaption>
+		</figure>
+		<figure>
+			<img src="assets/images/5.JPG" alt>
+			<figcaption>Descripcion5</figcaption>
+		</figure>
+	</figure>
+</div>
         <!------Servicios----->
         <div class="services" id="services">
             <div class="title" id="services">
                 Servicios
             </div>
                 <div class="dangerousResidues">
-                    <a href="dangerousResiduesServ.html"><img src="assets/images/3.JPG" alt="Residuos Peligrosos">
+                    <a href="#"><img src="assets/images/3.JPG" alt="Residuos Peligrosos">
                     Residuos Peligrosos</a>
                 </div>
                 <div class="specialResidues">
-                    <a href="specialResiduesServ.html"><img src="assets/images/4.JPG" alt="Residuos Especiales">
+                    <a href="#"><img src="assets/images/4.JPG" alt="Residuos Especiales">
                     Residuos Especiales</a>
                 </div>
                 <div class="urbanResidues">
-                    <a href="urbanResiduesServ.html"><img src="assets/images/5.JPG" alt="Residuos Urbanos">
+                    <a href="#"><img src="assets/images/5.JPG" alt="Residuos Urbanos">
                         Residuos Urbanos</a>
                 </div>
         </div>
         <!----Quienes Somos--->
-        <div class="whoAreWe" id="aboutUs">
+        <section class="whoAreWe" id="aboutUs">
             <div class="title">
             ¿Quiénes somos?
             </div>
             <div class="mision">
-                <div class=""></div>
-                <div class=""></div>
+                <div class="imageParagraph"><img src="assets/images/4.jpg" alt=""></div>
+                <div class="paragraph">
+                    Generar las mejores alternativas para la satisfacción de nuestros clientes, en el
+                    cumplimiento en la disposición de sus residuos. Colaborar en el asesoramiento para cumplir con las normas y reglas ambientales para la solución y el servicio de disposición de los residuos.
+                </div>
             </div>
             <div class="vision">
-                <div class=""></div>
-                <div class=""></div>
+                <div class="paragraph">
+                    Contribuir con nuestros asociados en sus éxitos, siendo la MEJOR OPCIÓN
+                    INTEGRAL en el manejo de sus residuos.
+                </div>
+                <div class="imageParagraph"><img src="assets/images/5.jpg" alt=""></div>
             </div>
             <div class="valores">
-                <div class=""></div>
-                <div class=""></div>
+                <div class="imageParagraph"><img src="assets/images/3.jpg" alt=""></div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veritatis minus dolorem nobis aut doloremque ad, tempore aliquid beatae, assumenda ipsa odit tempora eum, dicta earum iusto natus deleniti? Quis!</div>
+            </div>
+        </section>
+
+        <div class="ourWork" id="work">
+            <div class="title">Nuestro trabajo</div>
+            <div class="paragraph">
+                Somos una empresa mexicana, emprendedora, experta, dedicada al manejo integral de residuos, que inicialmente fueron materiales o productos utilizados parcial o en su totalidad, y que fueron desechados, convirtiéndose en RESIDUOS PELIGROSOS, RESIDUOS DE MANEJO ESPECIAL y RESIDUOS URBANOS.
+            </div>
+            <div class="imageParagraph">
+                <img src="assets/images/2.jpg" alt="">
             </div>
         </div>
+
+        <div class="where" id="ubication">
+                <div class="title">Estamos ubicados en </div>
+            </div>
 
     </div>
 </body>

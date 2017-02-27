@@ -76,7 +76,7 @@ header{
 }
 .title{
     font-size: 1.5em;
-    font-family: sans-serif;
+    font-family: Istok Web, sans-serif;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -101,4 +101,20 @@ header{
 }
 .services img{
     border-radius: 50%;
+}
+.imageParagraph{
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.paragraph{
+    width: 50%;
+    display: inline-block;
+    text-align: justify;
+    vertical-align: top;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    font-family: font-family: Istok Web, sans-serif;
+    font-size: 1em;
 }
