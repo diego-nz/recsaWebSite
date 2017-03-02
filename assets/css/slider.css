@@ -12,7 +12,7 @@
 figure {
     margin: 0;
     background: #101010;
-    font-family: Istok Web, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: 100;
 }
 div#captioned-gallery {
@@ -23,7 +23,7 @@ figure.slider {
     position: relative;
     width: 500%;
     font-size: 0;
-    animation: 30s slidy infinite;
+    animation: 15s slidy infinite;
 }
 figure.slider figure {
     width: 20%;

@@ -31,17 +31,23 @@
          </div>
    </div>
 
-     <nav>
-         <div class="menu">
-               <ul>
-                   <li><a href="#aboutUs">Acerca de nosotros</a></li>
+   <nav>
+
+    <label for="menuBtn">
+        <i class="fa fa-bars fa-pull-left fa-border fa-2x"></i>
+    </label>
+     <input type="checkbox" id="menuBtn">
+      <div class="menu">
+         <ul>
+            <li><a href="#aboutUs">Acerca de nosotros</a></li>
                    <li><a href="">Comprar</a></li>
-                   <li><a href="">Contacto</a></li>
-                   <li><a href="">Nuestro trabajo</a></li>
-                   <li><a href="#services">Servicios</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Nuestro trabajo</a></li>
+            <li><a href="#services">Servicios</a></li>
                </ul>
-          </div>
-       </nav>
+               </div>
+          </nav>
+
    </header>
     <div class="centerAllContent">
 
@@ -78,15 +84,17 @@
                <section class="contentAlignMiddle">
                    <div class="dangerousResidues">
                     <a href="#"><img src="assets/images/3.JPG" alt="Residuos Peligrosos">
-                    Residuos Peligrosos</a>
+                    </a>
+                    <div class="imageDescription">Residuos Peligrosos</div>
                 </div>
                 <div class="specialResidues">
                     <a href="#"><img src="assets/images/seleccion.jpg" alt="Residuos Especiales">
-                    Residuos de Manejo Especial</a>
+                    </a>
+                    <div class="imageDescription">Residuos de Manejo Especial</div>
                 </div>
                 <div class="urbanResidues">
-                    <a href="#"><img src="assets/images/5.JPG" alt="Residuos Urbanos">
-                        Residuos Urbanos</a>
+                    <a href="#"><img src="assets/images/5.JPG" alt="Residuos Urbanos"></a>
+                    <div class="imageDescription">Residuos Urbanos</div>
                 </div>
                </section>
 
@@ -99,30 +107,30 @@
             <div class="mision">
                 <div class="imageParagraph"><img src="assets/images/4.jpg" alt=""></div>
                 <div class="paragraph">
-                    Misión: Generar las mejores alternativas para la satisfacción de nuestros clientes, en el
+                    <strong>Misión:</strong> Generar las mejores alternativas para la satisfacción de nuestros clientes, en el
                     cumplimiento en la disposición de sus residuos. Colaborar en el asesoramiento para cumplir con las normas y reglas ambientales para la solución y el servicio de disposición de los residuos.
                 </div>
             </div>
             <div class="vision">
                 <div class="paragraph">
-                   Visión: Contribuir con nuestros asociados en sus éxitos, siendo la MEJOR OPCIÓN
+                   <strong>Visión:</strong>Contribuir con nuestros asociados en sus éxitos, siendo la MEJOR OPCIÓN
                     INTEGRAL en el manejo de sus residuos.
                 </div>
                 <div class="imageParagraph"><img src="assets/images/5.jpg" alt=""></div>
             </div>
             <div class="valores">
                 <div class="imageParagraph"><img src="assets/images/3.jpg" alt=""></div>
-                <div class="paragraph">Valores: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veritatis minus dolorem nobis aut doloremque ad, tempore aliquid beatae, assumenda ipsa odit tempora eum, dicta earum iusto natus deleniti? Quis!</div>
+                <div class="paragraph"><strong>Valores:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur veritatis minus dolorem nobis aut doloremque ad, tempore aliquid beatae, assumenda ipsa odit tempora eum, dicta earum iusto natus deleniti? Quis!</div>
             </div>
         </section>
 
         <div class="ourWork" id="work">
             <div class="title">Nuestro trabajo</div>
-            <div class="paragraph">
-                Somos una empresa mexicana, emprendedora, experta, dedicada al manejo integral de residuos, que inicialmente fueron materiales o productos utilizados parcial o en su totalidad, y que fueron desechados, convirtiéndose en RESIDUOS PELIGROSOS, RESIDUOS DE MANEJO ESPECIAL y RESIDUOS URBANOS.
-            </div>
             <div class="imageParagraph">
                 <img src="assets/images/2.jpg" alt="">
+            </div>
+            <div class="paragraph">
+                Somos una empresa mexicana, emprendedora, experta, dedicada al manejo integral de residuos, que inicialmente fueron materiales o productos utilizados parcial o en su totalidad, y que fueron desechados, convirtiéndose en RESIDUOS PELIGROSOS, RESIDUOS DE MANEJO ESPECIAL y RESIDUOS URBANOS.
             </div>
         </div>
     <!-----------Mapa-------------->
@@ -130,7 +138,9 @@
             <div class="title">
                Estamos ubicados en
                </div>
-                <img src="assets/images/mapa.png" alt=""/>
+               <div id="mapImage">
+                   <img src="assets/images/mapa.png" alt=""/>
+               </div>
         </div>
        <!------<div id="map"></div>
     <script>
@@ -161,30 +171,32 @@
                <ul>
                    <li>Direccion:</li>
                    <li>Carretera Federal</li>
-                   <li>México-Pachuca km. 37.5</li>
+                   <li>México-Pachuca</li>
+                   <li>k.m. 37.5</li>
                </ul>
             </div>
         </div>
         <div class="socialNetworks">
            <div class="subtitle">
-                Encuéntranos en
+                Búscanos en
             </div>
             <div class="contentFooter">
-               <span id="oneColumnF"><a href="#"><i class="fa fa-facebook-square fa-3x"></i></a></span>
-                <span id="oneColumnT"><a href="#"><i class="fa fa-twitter-square fa-3x"></i></a></span>
-                <span id="oneColumnL"><a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a></span>
-                <span id="oneColumnY"><a href="#"><i class="fa fa-youtube-square fa-3x"></i></a></span>
+               <span id="oneColumnFacebook"><i class="fa fa-facebook-square fa-3x"></i></span>
+                <span id="oneColumnTwitter"><i class="fa fa-twitter-square fa-3x"></i></span>
+                <span id="oneColumnLinkedin"><i class="fa fa-linkedin-square fa-3x"></i></span>
+                <span id="oneColumnYotube"><i class="fa fa-youtube-square fa-3x"></i></span>
 
             </div>
         </div>
         <div class="otherThings">
            <div class="subtitle">
-               Preguntas frecuentes 
+               Otros datos
             </div>
             <div class="contentFooter">
                 <ul>
-                    <li>Aviso de privacidad</li>
-                    <li>Políticas Generales</li>
+                    <li><a href="">Aviso de privacidad </a></li>
+                    <li><a href="">Políticas Generales</a></li>
+                    <li><a href="">Preguntas Frecuentes</a></li>
                 </ul>
             </div>
         </div>
@@ -193,7 +205,7 @@
                 Precio crud
             </div>
             <div class="contentFooter">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias atque rerum, molestiae dolore aspernatur ipsam cumque nemo corrupti odio voluptates! Sit ipsam fugiat laboriosamdsadsaxsxsaxasxa.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias atque rerum, molestiae dolore aspernatur ipsam cumque nemo corrupti odio voluptates! Sit ipsam fugiat laboriosamdsad.
             </div>
         </div>
     </footer>
