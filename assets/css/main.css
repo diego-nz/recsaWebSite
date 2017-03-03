@@ -4,17 +4,19 @@
 }
 a{
     text-decoration: none;
+    outline: none;
 }
 a:active{
-    color: white;
+    color: #FFF;
 }
 a:visited{
-    color: white;
+    color: #FFF;
 }
 body{
-    background: dodgerblue;
+    background: #28344D;
     width: 100%;
     font-family: Georgia,Arial,serif;
+    color: #FFF;
 }
 img{
     max-width: 100%;
@@ -31,11 +33,11 @@ ul li{
 .centerAllContent{
     margin-left: auto;
     margin-right: auto;
-    background: lightblue;
+    background: #444C5C;
     width: 60%;
 }
-.topElements{
-    background: white;
+.topNav{
+    background: #28344D;
 }
 .firstColumn {
    vertical-align: middle;
@@ -51,11 +53,13 @@ ul li{
 .secondColumn a{
     padding: 10px;
     border-radius: 5px;
-    border: solid 1px blue;
-    color: blue;
+    border: solid 1px #28344D;
+    background-color: #363F51;
+
 }
 .secondColumn a:hover{
-    background-color: dodgerblue;
+    background-color: #28344D;
+    border:solid 1px #363F51;
 }
 .thirdColumn{
     width: 24%;
@@ -67,24 +71,25 @@ ul li{
     display: inline;
     font-size: 1.2em;
 }
-.thirdColumn a{
-    background: green;
-}
 .thirdColumn a:hover{
-    background: black;
+    text-decoration: underline;
 }
 .menu{
-    background: green;
-    padding: 3%;
+    background: #636779;
+    --background: #444C5C;
+    padding: .1%;
+}
+.menu ul{
+    margin-left: 10%;
 }
 .menu ul li{
     display: inline-block;
     vertical-align: middle;
-    margin-left: 8%;
+    margin-left: 3%;
     margin-top: 3%;
     margin-bottom: 3%;
     padding: 1%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     --margin: 3%;
     text-align: center;
 }
@@ -92,11 +97,13 @@ ul li{
     padding: 15px;
     --padding-right: 15%;
     border-radius: 10%;
-    background: black;
+    background: #363F51;
+    border: solid 1px #28344D;
     color: white;
 }
 .menu ul li a:hover{
-    background: orange;
+    background: #28344D;
+    border: solid 1px #363F51;
 }
 
 .contentAlignMiddle{
@@ -127,8 +134,9 @@ ul li{
     cursor: pointer;
 }
 .imageDescription{
-    background-color: fuchsia;
     padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .services img{
     border-radius: 50%;
@@ -149,15 +157,22 @@ ul li{
     margin-right: 2%;
     margin-bottom: 5%;
     font-size: 1.2em;
+    line-height: 1.5em;
 }
-#mapImage{
-    margin-left: 20%;
-    margin-right: 20%;
+.mapImage img{
+    display: block;
+    margin: auto;
 }
 footer{
-    background: gray;
+    background: #444C5C;
     margin-left: 0%;
     margin-right: 0%;
+}
+#footerBottom{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 .subtitle{
     padding: 2%;
@@ -170,6 +185,7 @@ footer{
 .contentFooter{
     font-size: 1em;
     margin-bottom: 10%;
+    text-align: center;
 }
 .contentFooter ul li{
     margin-bottom: 5%;
@@ -180,47 +196,47 @@ footer{
     width: 24%;
     display: inline-block;
     vertical-align: top;
-    --border: solid 1px;
-    
 }
 .socialNetworks{
     width: 24%;
     display: inline-block;
     vertical-align: top;
-    --border: solid 1px;
 }
 .otherThings{
     width: 24%;
     display: inline-block;
     vertical-align: top;
-    --border: solid 1px;
+    cursor: pointer;
+}
+.otherThings ul li a:hover{
+    text-decoration: underline;
 }
 .data{
     width: 24%;
     display: inline-block;
     vertical-align: top;
-    --border: solid 1px;
 }
 #oneColumnFacebook{
     width: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 #oneColumnTwitter{
     width: 48%;
     display: inline-block;
-    align-self: center;
+    cursor: pointer;
 }
 #oneColumnLinkedin{
     width: 50%;
     display: inline-block;
-    align-self: center;
+    cursor: pointer;
 }
 #oneColumnYotube{
     width: 48%;
     display: inline-block;
-    align-self: center;
+    cursor: pointer;
 }
-i{
+i footer{
     margin-left: 35%;
     margin-bottom: 10%;
 }
@@ -233,14 +249,24 @@ nav label{
 }
 
 @media only screen and (max-width: 680px){
+    header{
+        display: block;
+        width: 100%;
+    }
     #menuBtn:checked ~.menu{
         margin: 0px;
     }
     nav label{
         display: inline-block;
     }
+    nav{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    body{
+        width: 100%;
+    }
     .menu{
-        background: green;
         position: absolute;
         margin-left: -900px;
         width: 50%;
@@ -250,21 +276,19 @@ nav label{
     .menu ul{
         flex-direction: column;
     }
-
     .menu ul li{
         border-top: 1px solid #FFF;
-        padding: 20px;
+        padding:8%;
         width: 80%;
-        text-align: center;--left
     }
     .menu ul li a{
-        color: aliceblue;
+        color: #FFF;
         display: block;
     }
    .centerAllContent{
         margin-left: 0;
         margin-right: 0;
-        background: yellow;
+        background: #444C5C;
         width: 100%;
     }
     .firstColumn {
@@ -273,21 +297,25 @@ nav label{
         display: inline-block;
     }
     .secondColumn{
-        width: 25%;
+        width: 60%;
         vertical-align: baseline;
         display: inline-block;
-        text-align: center;
+        text-align: right;
     }
     .thirdColumn{
-        width: 35%;
-        display: inline-block;
-        text-align: right;
+        width: 55%;
+        display: block;
+        text-align: center;
+        float: right;
+        margin-top: 3%;
     }
     .thirdColumn ul li{
         display: inline-block;
     }
-    body{
-        background-color: white;
+    .thirdColumn ul li a{
+        color: #FFF;
+        padding: 10%;
+        border-radius: 15%;
     }
     .title{
         font-size: 3em;
@@ -319,5 +347,92 @@ nav label{
         cursor: pointer;
         font-size: 2em;
         margin-bottom: 10%;
+    }
+    .imageParagraph{
+        width: 100%;
+        display: block;
+        margin-bottom: 5%;
+        margin-left: .1%;
+    }
+    .paragraph{
+        width: 100%;
+        display: block;
+        text-align: justify;
+        vertical-align: top;
+        margin-left: .1%;
+        margin-right: .1%;
+        margin-bottom: 5%;
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    footer{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .subtitle{
+        padding: 2%;
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-bottom: 5%;
+        vertical-align: text-bottom;
+        text-align: center;
+    }
+    .contentFooter{
+        font-size: 1.4em;
+        margin-bottom: 10%;
+    }
+    .contentFooter ul li{
+        margin-bottom: 5%;
+        margin-top: 2%;
+        text-align: center;
+    }
+    .address{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    .socialNetworks{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    .otherThings{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    .data{
+        width: 100%;
+        display: block;
+        vertical-align: top;
+    }
+    #oneColumnFacebook{
+        width: 50%;
+        display: inline-block;
+        margin-left: -15%;
+        left: 10%;
+    }
+    #oneColumnTwitter{
+        width: 48%;
+        display: inline-block;
+        margin-left: -15%;
+    }
+    #oneColumnLinkedin{
+        width: 50%;
+        display: inline-block;
+        margin-left: -15%;
+    }
+    #oneColumnYotube{
+        width: 48%;
+        display: inline-block;
+        margin-left: -15%;
+    }
+    i{
+        margin-left: 35%;
+        margin-bottom: 10%;
+        cursor: pointer;
+    }
+    #menuBtn{
+        display: none;
     }
 }
